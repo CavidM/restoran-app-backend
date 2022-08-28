@@ -12,7 +12,7 @@ exports.seed = async function(knex) {
 
   // Prepare data
 
-  const restaurants = (new Array(10))
+  const restaurants = (new Array(100))
   .fill(null)
   .map(() => ({
     name: chance.company(),
