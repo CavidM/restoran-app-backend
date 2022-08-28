@@ -1,8 +1,8 @@
 const express = require('express')
 var { graphqlHTTP } = require('express-graphql');
-const { schema } = require('./src/graphql-api/schema');
-require('./src/database/index');
-const { root } = require('./src/graphql-api/root');
+import {schema } from './src/graphql-api/schema';
+import './src/database/index';
+import { root } from './src/graphql-api/root';
 const port = 3000
 
 const app = express();
